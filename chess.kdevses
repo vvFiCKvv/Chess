@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE KDevPrjSession>
+<KDevPrjSession>
+ <DocsAndViews NumberOfDocuments="9" >
+  <Doc0 NumberOfViews="1" URL="file:///home/milios/chess/ChessAlgorithm.cpp" >
+   <View0 Type="Source" />
+  </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///home/milios/chess/boardGraphics.cpp" >
+   <View0 line="533" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///home/milios/chess/objectGraphics.cpp" >
+   <View0 line="87" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///home/milios/chess/chess.cpp" >
+   <View0 line="5" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/milios/chess/ChessBoard.h" >
+   <View0 line="0" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/milios/chess/ChessBoard.cpp" >
+   <View0 line="1035" Type="Source" />
+  </Doc5>
+  <Doc6 NumberOfViews="1" URL="file:///home/milios/chess/objectGraphics.h" >
+   <View0 line="84" Type="Source" />
+  </Doc6>
+  <Doc7 NumberOfViews="1" URL="file:///home/milios/chess/boardGraphics.h" >
+   <View0 line="4" Type="Source" />
+  </Doc7>
+  <Doc8 NumberOfViews="1" URL="file:///home/milios/chess/lib/DoubleLinkedList.cpp" >
+   <View0 line="273" Type="Source" />
+  </Doc8>
+ </DocsAndViews>
+ <pluginList>
+  <kdevdebugger>
+   <breakpointList>
+    <breakpoint0 location="/home/milios/chess/boardGraphics.cpp:125" type="1" condition="" enabled="1" />
+    <breakpoint1 location="/home/milios/chess/boardGraphics.cpp:115" type="1" condition="" enabled="1" />
+   </breakpointList>
+  </kdevdebugger>
+  <kdevbookmarks>
+   <bookmarks/>
+  </kdevbookmarks>
+  <kdevvalgrind>
+   <executable path="" params="" />
+   <valgrind path="/usr/bin/valgrind" params="--tool=memcheck  --leak-check=yes" />
+   <calltree path="calltree" params="" />
+   <kcachegrind path="/opt/kde3/bin/kcachegrind" />
+  </kdevvalgrind>
+ </pluginList>
+</KDevPrjSession>

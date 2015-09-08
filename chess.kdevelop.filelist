@@ -1,0 +1,17 @@
+# KDevelop Custom Project File List
+boardGraphics.cpp
+boardGraphics.h
+chess.cpp
+ChessAlgorithm.cpp
+ChessAlgorithm.h
+ChessBoard.cpp
+ChessBoard.h
+Makefile
+objectGraphics.cpp
+objectGraphics.h
+Pown.cpp
+Pown.h
+Rasters.h
+resource.h
+lib/DoubleLinkedList.cpp
+lib/DoubleLinkedList.h
