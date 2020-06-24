@@ -23,6 +23,8 @@
 #include "ChessBoard.h"
 #include "lib/DoubleLinkedList.h"
 #include <stdio.h>
+#include <string.h> 
+#include <unistd.h>
 /*================================================*/
 
 #define ASCII_ESCAPE 27
@@ -317,16 +319,16 @@ void opponentPlay(void )
 		case IS_MAT:
 			if(turn==true)
 			{
-				MessageBox(NULL,"BLACK Wins with MAT!","MAT",MB_OK);
+				// MessageBox(NULL,"BLACK Wins with MAT!","MAT",MB_OK);
 			}
 			else
 			{
-				MessageBox(NULL,"WHITE Wins with MAT!","MAT",MB_OK);
+				// MessageBox(NULL,"WHITE Wins with MAT!","MAT",MB_OK);
 			}
 			gameover=true;
 			break;
 		case IS_PAT:
-			MessageBox(NULL,"The game is PAT!","PAT",MB_OK);
+			// MessageBox(NULL,"The game is PAT!","PAT",MB_OK);
 			gameover=true;
 			break;
 		case IS_OK:
@@ -506,16 +508,16 @@ case GLUT_LEFT_BUTTON:
 			case IS_MAT:
 				if(turn==true)
 				{
-					MessageBox(NULL,"BLACK Wins with MAT!","MAT",MB_OK);
+					// MessageBox(NULL,"BLACK Wins with MAT!","MAT",MB_OK);
 				}
 				else
 				{
-					MessageBox(NULL,"WHITE Wins with MAT!","MAT",MB_OK);
+					// MessageBox(NULL,"WHITE Wins with MAT!","MAT",MB_OK);
 				}
 				gameover=true;
 				break;
 			case IS_PAT:
-				MessageBox(NULL,"The Game End with PAT!","PAT",MB_OK);
+				// MessageBox(NULL,"The Game End with PAT!","PAT",MB_OK);
 				gameover=true;
 				break;
 			case IS_OK:
@@ -636,6 +638,10 @@ void initializeWindow(char *title, int pos_X, int pos_Y)
 	board->enableLogKeeping();
 
 	//create a window
+	int argc = 1;
+	char *argv[1];
+	argv[0] = strdup("Chess");
+	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(WWIDTH, WHEIGHT);
 	glutInitWindowPosition(pos_X, pos_Y);
@@ -680,6 +686,9 @@ void initializeWindow(char *title, int pos_X, int pos_Y)
 	}
 	
 }
+
+
+
 void idle(void)
 {
 
@@ -692,7 +701,7 @@ void idle(void)
 		glutSetWindow(capwid);
 		glutPostRedisplay();
 		glutSetWindow(wid);
-		Sleep(10);
+		usleep(10);
 		return;
 	}
 	switch(promotionType)
